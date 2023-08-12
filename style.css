@@ -1,5 +1,12 @@
 body {
-  background: rgb(179, 156, 153);
+  font-family: sans-serif;
+  background: rgb(214, 207, 206);
+}
+
+h2 {
+  letter-spacing: 5px;
+  text-align: center;
+  color: rgb(2, 78, 6);
 }
 
 .container {
@@ -14,7 +21,26 @@ body {
   margin: 5px;
 }
 
-@media screen and (max-width: 700px) {
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
   .container img {
     width: 450px;
   }
